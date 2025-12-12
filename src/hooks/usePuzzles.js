@@ -19,8 +19,8 @@ export function usePuzzles() {
 
         // Fetch both puzzle metadata and images in parallel
         const [puzzlesResponse, imagesResponse] = await Promise.all([
-          fetch('/data/puzzles.json'),
-          fetch('/data/puzzle-images.json').catch(() => null) // Don't fail if images file doesn't exist yet
+          fetch(`${process.env.PUBLIC_URL}/data/puzzles.json`),
+          fetch(`${process.env.PUBLIC_URL}/data/puzzle-images.json`).catch(() => null) // Don't fail if images file doesn't exist yet
         ]);
 
         if (!puzzlesResponse.ok) {
