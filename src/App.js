@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/puzzle-collection">
       <div className="App">
         <Header />
         <main className="main-content">
