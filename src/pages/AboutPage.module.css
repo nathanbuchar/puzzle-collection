@@ -1,0 +1,161 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 8rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 300;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+/* Content */
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 6rem;
+}
+
+.section:last-child {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  margin: 0 0 2rem 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.25px;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 1.5rem 0;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.section a {
+  color: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease;
+}
+
+.section a:hover {
+  border-bottom-color: #000;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.statNumber {
+  font-size: 32px;
+  font-weight: 300;
+  color: #000;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* Attribution blockquote */
+.attribution {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-left: 3px solid rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.attribution em {
+  font-style: normal;
+  letter-spacing: 0.25px;
+}
+
+.attribution a {
+  color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.attribution a:hover {
+  color: #000;
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .header {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .section {
+    margin-bottom: 4rem;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+
+  .section p {
+    font-size: 15px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .statNumber {
+    font-size: 28px;
+  }
+}

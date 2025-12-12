@@ -1,0 +1,331 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 8rem 2rem;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.error {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 8rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  margin: 0 0 1.5rem 0;
+  font-size: 48px;
+  font-weight: 300;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Content */
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Manufacturer Section */
+.manufacturerSection {
+  margin-bottom: 8rem;
+}
+
+.manufacturerSection:last-child {
+  margin-bottom: 6rem;
+}
+
+.sectionHeader {
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.sectionHeader h2 {
+  margin: 0 0 2rem 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+
+.manufacturerInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 3rem;
+}
+
+.manufacturerInfo p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.6;
+}
+
+.manufacturerInfo strong {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.rebrandNote {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-left: 3px solid rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.7;
+}
+
+/* Batch Section */
+.batchSection {
+  margin-bottom: 6rem;
+}
+
+.batchSection h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.25px;
+}
+
+.batchDescription {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.8;
+  margin: 0 0 3rem 0;
+  max-width: 900px;
+}
+
+/* Variant Grid */
+.variantGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.variantCard {
+  background: white;
+  transition: transform 0.2s;
+}
+
+.variantCard:hover {
+  transform: translateY(-4px);
+}
+
+.variantLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.variantImage {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #f5f5f5;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.variantImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noPhotoPlaceholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.noPhotoPlaceholder span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+}
+
+.variantInfo h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.accessionNo {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.5px;
+  font-family: 'Courier New', monospace;
+}
+
+/* View All Link */
+.viewAll {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.viewAll a {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  letter-spacing: 0.25px;
+}
+
+.viewAll a:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+/* Notes Section */
+.notesSection {
+  margin-top: 6rem;
+  padding: 3rem;
+  background: #f9f9f9;
+  border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.notesSection h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.25px;
+}
+
+.notesSection p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+}
+
+.notesSection p:last-child {
+  margin-bottom: 0;
+}
+
+.notesSection a {
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.notesSection a:hover {
+  color: #000;
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .variantGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 1.5rem;
+  }
+
+  .manufacturerInfo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .header {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 28px;
+  }
+
+  .batchSection h3 {
+    font-size: 20px;
+  }
+
+  .variantGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+
+  .manufacturerSection {
+    margin-bottom: 6rem;
+  }
+
+  .batchSection {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 24px;
+  }
+
+  .variantGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .notesSection {
+    padding: 2rem;
+  }
+}
