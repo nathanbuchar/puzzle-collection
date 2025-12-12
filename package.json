@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "sync-data": "node scripts/sync-sheets.js",
     "sync-photos": "node scripts/sync-photos.js",
-    "prebuild": "npm run sync-data && npm run sync-photos",
+    "sync-all": "npm run sync-data && npm run sync-photos",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
